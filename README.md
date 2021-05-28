@@ -13,7 +13,9 @@ I modified the colmap,when  it reconstructs from known pose ,only let it optimiz
 
 ................cameras.txt   
 
-................points3D.txt      //empty file
-..........trans.py  // trans colmap tvec to camera center  and trans camera center to colmap tvec(-R.T*tvec=C   and tvec=-R*C)
+................points3D.txt      //empty file  
+
+..........trans.py  // trans colmap tvec to camera center  and trans camera center to colmap tvec(-R.T*tvec=C   and tvec=-R*C)  
+
 ..........run  3D_from_prior_pose.sh 
 

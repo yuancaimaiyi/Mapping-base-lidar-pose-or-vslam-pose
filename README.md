@@ -1,5 +1,6 @@
 # Mapping-base-lidar-pose-or-vslam-pose
 I modified the colmap,when  it reconstructs from known pose ,only let it optimize rotation ,fixing position! 
+reference : https://colmap.github.io/faq.html?highlight=known%20pose#reconstruct-sparse-dense-model-from-known-camera-poses 
 ## first step
 ### (1) base/cost_functions.h replace your code
 ### (2) controllers/bundle_adjustment.cc replace your code

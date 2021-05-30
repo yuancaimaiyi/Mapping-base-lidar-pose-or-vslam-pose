@@ -1,6 +1,6 @@
 # Mapping-base-lidar-pose-or-vslam-pose
 I simply modified the colmap,when it reconstructs from known pose ,only let it optimize rotation ,fixing position!  
-Why do I do this, because when reconstructing from a known pose, if you use the rtk position, there is no need to optimize the position during BA fine-tuning. You can fine-tune the rotation, but this is a very loose coupling, if you want to use rtk to constrain BA, you can look at openmvg **sfm_data_BA_ceres.cpp**. You can implement it in colmap immediately！！！！！！！
+Why do I do this, because when reconstructing from a known pose, if you use the rtk position, there is no need to optimize the position during BA fine-tuning. You can only fine-tune the rotation(3dof +3Dpoints optimize), but this is a very loose coupling, if you want to use rtk to constrain BA, you can look at openmvg ---"**sfm_data_BA_ceres.cpp**". You can implement it in colmap immediately！！！！！！！
 reference : https://colmap.github.io/faq.html?highlight=known%20pose#reconstruct-sparse-dense-model-from-known-camera-poses  
 
 
